@@ -1,0 +1,13 @@
+# Treat drawings and exports as binary so git never tries to diff or merge them
+*.dwg binary
+*.dxf -text
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.docx binary
+
+# Normalise text files
+*.md text eol=lf
+*.yml text eol=lf
+*.json text eol=lf

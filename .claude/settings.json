@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Edit(/**/*.md)",
+      "Write(/**/*.md)",
+      "PowerShell(Get-ChildItem:*)",
+      "PowerShell(Get-Content:*)",
+      "PowerShell(*git.exe status*)",
+      "PowerShell(*git.exe log*)",
+      "PowerShell(*git.exe diff*)",
+      "PowerShell(*git.exe show*)",
+      "PowerShell(*git.exe ls-files*)"
+    ],
+    "ask": [
+      "PowerShell(*git.exe add*)",
+      "PowerShell(*git.exe commit*)",
+      "PowerShell(*git.exe push*)",
+      "PowerShell(*git.exe mv*)",
+      "PowerShell(Rename-Item:*)",
+      "PowerShell(Move-Item:*)"
+    ],
+    "deny": [
+      "Edit(/**/*.dwg)",
+      "Write(/**/*.dwg)",
+      "Edit(/**/*.pdf)",
+      "Write(/**/*.pdf)",
+      "Edit(/**/*.docx)",
+      "Write(/**/*.docx)",
+      "PowerShell(*git.exe push*--force*)",
+      "PowerShell(*git.exe push*-f*)",
+      "PowerShell(*git.exe reset --hard*)",
+      "PowerShell(*git.exe clean*)",
+      "PowerShell(Remove-Item:*)"
+    ]
+  }
+}
